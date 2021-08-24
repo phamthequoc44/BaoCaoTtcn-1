@@ -1,691 +1,1213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
+	    <meta name="robots" content="all">
 
-<!DOCTYPE html>
+	    <title>Shop Laptop</title>
 
-<head>
-	<title>Shop Laptop</title>
-	
-	<meta charset="UTF-8"/>	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/all.css" rel="stylesheet"> <!--load all styles -->		
-	<script defer src="js/all.js"></script> <!--load all styles -->	
-	<link rel="stylesheet" type="text/css" media="all" href="css/responsive.css"/>	
-	<link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>	
-	<link rel='stylesheet' id='cherry-plugin-css' href='css/cherry-plugin.cssver1.2.6.css' type='text/css' media='all'/>	
-	<link rel='stylesheet' id='theme52702-css' href='css/main-style.css' type='text/css' media='all'/>	
-	<link rel='stylesheet' id='magnific-popup-css' href='css/magnific-popup.cssver0.9.3.css' type='text/css' media='all'/>
-	<script type='text/javascript' src='js/jquery-1.7.2.min.jsver1.7.2.js'></script>	
-	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) instead for release -->
-    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.js"></script>
-    <script type="text/javascript" src="../js/jssor.slider.js"></script>
-	<script type="text/javascript">
-		// Init navigation menu
-		jQuery(function(){
-		// main navigation init
-			jQuery('ul.sf-menu').superfish({
-				delay: 1000, // the delay in milliseconds that the mouse can remain outside a sub-menu without it closing
-				animation: {
-					opacity: "show",
-					height: "show"
-				}, // used to animate the sub-menu open
-				speed: "normal", // animation speed
-				autoArrows: true, // generation of arrow mark-up (for submenu)
-				disableHI: true // to disable hoverIntent detection
-			});
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+	    
+	    <!-- Customizable CSS -->
+	    <link rel="stylesheet" href="assets\css\main.css">
+	    <link rel="stylesheet" href="assets\css\blue.css">
+	    <link rel="stylesheet" href="assets\css\owl.carousel.css">
+		<link rel="stylesheet" href="assets\css\owl.transitions.css">
+		<link rel="stylesheet" href="assets\css\animate.min.css">
+		<link rel="stylesheet" href="assets\css\rateit.css">
+		<link rel="stylesheet" href="assets\css\bootstrap-select.min.css">
+        <link href="assets\css\lightbox.css" rel="stylesheet">
+		
 
-		//Zoom fix
-		//IPad/IPhone
-			var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]'),
-				ua = navigator.userAgent,
-				gestureStart = function () {
-					viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0";
-				},
-				scaleFix = function () {
-					if (viewportmeta && /iPhone|iPad/.test(ua) && !/Opera Mini/.test(ua)) {
-						viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-						document.addEventListener("gesturestart", gestureStart, false);
-					}
-				};
-			scaleFix();
-		})
-	</script>					
-</head>
-<body class="home">
-	<div id="motopress-main" class="main-holder">
-		<header class="motopress-wrapper header">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="header_top">
-							<div class="row">
-								
+		
+		<!-- Icons/Glyphs -->
+		<link rel="stylesheet" href="assets\css\font-awesome.css">
+
+        <!-- Fonts --> 
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+	</head>
+    <body class="cnt-home">
+		<!-- ============================================== HEADER ============================================== -->
+
+
+<!-- ============================================== HEADER : END ============================================== -->
+<!-- <div class="breadcrumb">
+	<div class="container">
+		<div class="breadcrumb-inner">
+			<ul class="list-inline list-unstyled">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Clothing</a></li>
+				<li class='active'>Floral Print Buttoned</li>
+			</ul>
+		</div><!-- /.breadcrumb-inner -->
+	</div><!-- /.container
+</div>/.breadcrumb -->
+<div class="body-content outer-top-xs">
+	<div class='container'>
+		<div class='row single-product'>
+			<div class='col-md-3 sidebar'>
+				<div class="sidebar-module-container">
+				<div class="home-banner outer-top-n">
+<img src="assets/images/banners/laptop_br1.jpg" alt="Image" height="150" width="260" >
+</div>		
+  
+    
+    
+    	<!-- ============================================== HOT DEALS ============================================== -->
+<div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs">
+	<h3 class="section-title">hot deals</h3>
+	<div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
+		
+														<div class="item">
+					<div class="products">
+						<div class="hot-deal-wrapper">
+							<div class="image">
+								<img src="assets/images/hot-deals/acer.webp" alt="">
 							</div>
-						</div>
-						<div class="row">
-							<div class="span3"> 
-								<div class="logo pull-left" id="logo">
-									<a href="#" class=" logo_h__img">
-										<img src="images/logo.png" alt="provise" title="provise">
-									</a>
-									<p class="logo_tagline">Shop Điện tử</p> 
+							<div class="sale-offer-tag"><span>35%<br>off</span></div>
+							<div class="timing-wrapper">
+								<div class="box-wrapper">
+									<div class="date box">
+										<span class="key">120</span>
+										<span class="value">Days</span>
+									</div>
+								</div>
+				                
+				                <div class="box-wrapper">
+									<div class="hour box">
+										<span class="key">20</span>
+										<span class="value">HRS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper">
+									<div class="minutes box">
+										<span class="key">36</span>
+										<span class="value">MINS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper hidden-md">
+									<div class="seconds box">
+										<span class="key">60</span>
+										<span class="value">SEC</span>
+									</div>
 								</div>
 							</div>
-							<div class="span7 margin_left_10">
+						</div><!-- /.hot-deal-wrapper -->
+
+						<div class="product-info text-left m-t-20">
+							<h3 class="name"><a href="detail.html">Máy tính Acer</a></h3>
+							<div class="rating rateit-small"></div>
+
+							<div class="product-price">	
+								<span class="price">
+									$600.00
+								</span>
+									
+							    <span class="price-before-discount">$800.00</span>					
+							
+							</div><!-- /.product-price -->
+							
+						</div><!-- /.product-info -->
+
+						<div class="cart clearfix animate-effect">
+							<div class="action">
+								
+								<div class="add-cart-button btn-group">
+									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+										<i class="fa fa-shopping-cart"></i>													
+									</button>
+									<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+															
+								</div>
+								
+							</div><!-- /.action -->
+						</div><!-- /.cart -->
+					</div>	
+					</div>		        
+													<div class="item">
+					<div class="products">
+						<div class="hot-deal-wrapper">
+							<div class="image">
+								<img src="assets/images/hot-deals/pavilionX360.webp" alt="">
+							</div>
+							<div class="sale-offer-tag"><span>35%<br>off</span></div>
+							<div class="timing-wrapper">
+								<div class="box-wrapper">
+									<div class="date box">
+										<span class="key">120</span>
+										<span class="value">Days</span>
+									</div>
+								</div>
+				                
+				                <div class="box-wrapper">
+									<div class="hour box">
+										<span class="key">20</span>
+										<span class="value">HRS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper">
+									<div class="minutes box">
+										<span class="key">36</span>
+										<span class="value">MINS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper hidden-md">
+									<div class="seconds box">
+										<span class="key">60</span>
+										<span class="value">SEC</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- /.hot-deal-wrapper -->
+
+						<div class="product-info text-left m-t-20">
+							<h3 class="name"><a href="detail.html">Máy tính Acer</a></h3>
+							<div class="rating rateit-small"></div>
+
+							<div class="product-price">	
+								<span class="price">
+									$600.00
+								</span>
+									
+							    <span class="price-before-discount">$800.00</span>					
+							
+							</div><!-- /.product-price -->
+							
+						</div><!-- /.product-info -->
+
+						<div class="cart clearfix animate-effect">
+							<div class="action">
+								
+								<div class="add-cart-button btn-group">
+									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+										<i class="fa fa-shopping-cart"></i>													
+									</button>
+									<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+															
+								</div>
+								
+							</div><!-- /.action -->
+						</div><!-- /.cart -->
+					</div>	
+					</div>		        
+													<div class="item">
+					<div class="products">
+						<div class="hot-deal-wrapper">
+							<div class="image">
+								<img src="assets/images/hot-deals/hp240g8.webp" alt="">
+							</div>
+							<div class="sale-offer-tag"><span>35%<br>off</span></div>
+							<div class="timing-wrapper">
+								<div class="box-wrapper">
+									<div class="date box">
+										<span class="key">120</span>
+										<span class="value">Days</span>
+									</div>
+								</div>
+				                
+				                <div class="box-wrapper">
+									<div class="hour box">
+										<span class="key">20</span>
+										<span class="value">HRS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper">
+									<div class="minutes box">
+										<span class="key">36</span>
+										<span class="value">MINS</span>
+									</div>
+								</div>
+
+				                <div class="box-wrapper hidden-md">
+									<div class="seconds box">
+										<span class="key">60</span>
+										<span class="value">SEC</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- /.hot-deal-wrapper -->
+
+						<div class="product-info text-left m-t-20">
+							<h3 class="name"><a href="detail.html">Máy tính Acer</a></h3>
+							<div class="rating rateit-small"></div>
+
+							<div class="product-price">	
+								<span class="price">
+									$600.00
+								</span>
+									
+							    <span class="price-before-discount">$800.00</span>					
+							
+							</div><!-- /.product-price -->
+							
+						</div><!-- /.product-info -->
+
+						<div class="cart clearfix animate-effect">
+							<div class="action">
+								
+								<div class="add-cart-button btn-group">
+									<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+										<i class="fa fa-shopping-cart"></i>													
+									</button>
+									<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+															
+								</div>
+								
+							</div><!-- /.action -->
+						</div><!-- /.cart -->
+					</div>	
+					</div>		        
+						
+	    
+    </div><!-- /.sidebar-widget -->
+</div>
+<!-- ============================================== HOT DEALS: END ============================================== -->					
+
+<!-- ============================================== Testimonials============================================== -->
+<div class="sidebar-widget  wow fadeInUp outer-top-vs ">
+	<div id="advertisement" class="advertisement">
+        <div class="item">
+            <div class="avatar"><img src="data:image/png;base64,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" alt="Image"></div>
+		<div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+		<div class="clients_author">John Doe	<span>Abc Company</span>	</div><!-- /.container-fluid -->
+        </div><!-- /.item -->
+
+         <div class="item">
+         	<div class="avatar"><img src="data:image/png;base64,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" alt="Image"></div>
+		<div class="testimonials"><em>"</em>Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+		<div class="clients_author">Stephen Doe	<span>Xperia Designs</span>	</div>    
+        </div><!-- /.item -->
+
+        <div class="item">
+            <div class="avatar"><img src="https://store-images.s-microsoft.com/image/apps.12266.13510798882876448.144d96a2-7f1d-4651-a506-f067722dbac9.138c4cad-2f40-463d-8dfb-7b895ca65ad4?mode=scale&q=90&h=300&w=300" alt="Image"></div>
+		<div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
+		<div class="clients_author">Saraha Smith	<span>Datsun &amp; Co</span>	</div><!-- /.container-fluid -->
+        </div><!-- /.item -->
+
+    </div><!-- /.owl-carousel -->
+</div>
+    
+<!-- ============================================== Testimonials: END ============================================== -->
+
  
-								<nav class="nav nav__primary clearfix ">
-									<ul id="topnav" class="sf-menu">
-										<li id="menu-item-1807" class="menu-item current_page_item">
-											<a href="index.html">Trang Chủ</a>
-										</li>
-										
-										<li id="menu-item-1808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Kiểu Thiết bị</a>
-											<ul class="sub-menu">
-												<li id="menu-item-1815" class="menu-item"><a href="kieu.html">khuyến mãi</a></li>
-												<li id="menu-item-1814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Loại thiết bị</a>
-													<ul class="sub-menu">
-													<li id="menu-item-1883" class="menu-item"><a href="kieu.html">Laptop HP</a></li>
-													<li id="menu-item-1882" class="menu-item"><a href="kieu.html">Laptop Acer</a></li>
-													<li id="menu-item-1881" class="menu-item"><a href="kieu.html">Laptop Dell</a></li>
-													<li id="menu-item-1881" class="menu-item"><a href="kieu.html">Laptop Lenovo</a></li>
-													</ul>
-												</li>
-												<li id="menu-item-1813" class="menu-item"><a href="kieu.html">Bán Chạy</a></li>
-												<li id="menu-item-1813" class="menu-item"><a href="kieu.html">Mới Cập Nhật</a></li>
-											</ul>
-										</li>
-										<li id="menu-item-1809" class="menu-item"><a href="contact.html">Trợ giúp</a></li>
-										<li id="menu-item-1804" class="menu-item"><a href="giohang.html">Giỏ hàng</a></li>
-										<li id="menu-item-1810" class="menu-item">
-											<a href="dangnhap.html">Đăng nhập</a>
-										</li>
-									</ul>
+
+				</div>
+			</div><!-- /.sidebar -->
+			<div class='col-md-9'>
+            <div class="detail-block">
+				<div class="row  wow fadeInUp">
+                
+					     <div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
+    <div class="product-item-holder size-big single-product-gallery small-gallery">
+
+        <div id="owl-single-product">
+            <div class="single-product-gallery-item" id="slide1">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/acer.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide2">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/hp240g8.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide3">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/pavilionX360.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide4">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/acer.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide5">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/hp240g8.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide6">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/pavilionX360.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide7">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/acer.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide8">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/hp240g8.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+            <div class="single-product-gallery-item" id="slide9">
+                <a data-lightbox="image-1" data-title="Gallery" href="assets/images/hot-deals/pavilionX360.webp">
+                    <img class="img-responsive" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                </a>
+            </div><!-- /.single-product-gallery-item -->
+
+        </div><!-- /.single-product-slider -->
+
+
+        <div class="single-product-gallery-thumbs gallery-thumbs">
+
+            <div id="owl-single-product-thumbnails">
+                <div class="item">
+                    <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="4" href="#slide4">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5" href="#slide5">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6" href="#slide6">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7" href="#slide7">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/acer.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8" href="#slide8">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/hp240g8.webp">
+                    </a>
+                </div>
+                <div class="item">
+
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9" href="#slide9">
+                        <img class="img-responsive" width="85" alt="" src="assets\images\blank.gif" data-echo="assets/images/hot-deals/pavilionX360.webp">
+                    </a>
+                </div>
+            </div><!-- /#owl-single-product-thumbnails -->
+
+            
+
+        </div><!-- /.gallery-thumbs -->
+
+    </div><!-- /.single-product-gallery -->
+</div><!-- /.gallery-holder -->        			
+					<div class='col-sm-6 col-md-7 product-info-block'>
+						<div class="product-info">
+							<h1 class="name">Laptop Acer</h1>
+							
+							<div class="rating-reviews m-t-20">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="rating rateit-small"></div>
+									</div>
+									<div class="col-sm-8">
+										<div class="reviews">
+											<a href="#" class="lnk">(13 Reviews)</a>
+										</div>
+									</div>
+								</div><!-- /.row -->		
+							</div><!-- /.rating-reviews -->
+
+							<div class="stock-container info-container m-t-10">
+								<div class="row">
+									<div class="col-sm-2">
+										<div class="stock-box">
+											<span class="label">Availability :</span>
+										</div>	
+									</div>
+									<div class="col-sm-9">
+										<div class="stock-box">
+											<span class="value">In Stock</span>
+										</div>	
+									</div>
+								</div><!-- /.row -->	
+							</div><!-- /.stock-container -->
+
+							<div class="description-container m-t-20">
+								Tính di động là một trong những tiêu chí tối quan trọng khi chọn mua một sản phẩm công nghệ để phục vụ cho nhu cầu được cập nhật thông tin cũng như hoàn thành công việc mà không phải build hẳn một cỗ máy có chip vi xử lý bất kỳ thuộc thế hệ Coffe Lake mới nhất. Chính vì sự quan trọng việc càng mỏng-càng nhẹ-càng tốt mà những sản phẩm của Apple như iPhone, iPad, Macbook được săn đón nồng nhiệt trong cộng đồng hiện đại như hiện nay là dễ hiểu.
+							</div><!-- /.description-container -->
+
+							<div class="price-container info-container m-t-20">
+								<div class="row">
 									
-								</nav>
+
+									<div class="col-sm-6">
+										<div class="price-box">
+											<span class="price">$800.00</span>
+											<span class="price-strike">$900.00</span>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="favorite-button m-t-10">
+											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
+											    <i class="fa fa-heart"></i>
+											</a>
+											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add to Compare" href="#">
+											   <i class="fa fa-signal"></i>
+											</a>
+											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
+											    <i class="fa fa-envelope"></i>
+											</a>
+										</div>
+									</div>
+
+								</div><!-- /.row -->
+							</div><!-- /.price-container -->
+
+							<div class="quantity-container info-container">
+								<div class="row">
+									
+									<div class="col-sm-2">
+										<span class="label">Qty :</span>
+									</div>
+									
+									<div class="col-sm-2">
+										<div class="cart-quantity">
+											<div class="quant-input">
+								                <div class="arrows">
+								                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
+								                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
+								                </div>
+								                <input type="text" value="1">
+							              </div>
+							            </div>
+									</div>
+
+									<div class="col-sm-7">
+										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
+									</div>
+
+									
+								</div><!-- /.row -->
+							</div><!-- /.quantity-container -->
+
+							
+
+							
+
+							
+						</div><!-- /.product-info -->
+					</div><!-- /.col-sm-7 -->
+				</div><!-- /.row -->
+                </div>
+				
+				<div class="product-tabs inner-bottom-xs  wow fadeInUp">
+					<div class="row">
+						<div class="col-sm-3">
+							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
+								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
+								<li><a data-toggle="tab" href="#review">REVIEW</a></li>
+								<li><a data-toggle="tab" href="#tags">TAGS</a></li>
+							</ul><!-- /.nav-tabs #product-tabs -->
+						</div>
+						<div class="col-sm-9">
+
+							<div class="tab-content">
 								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<script>
-				function changeClass(){
-					document.getElementById ('topnav'). classList.toggle ('dlb');
-				}
-				window.onload = function(){
-				document.getElementById("logo").addEventListener( 'click', changeClass);
-    }
-			</script>
-		</header>
-		<style>
-			.home .content-holder {
-			padding: 0;
-			margin-top: 55px;
-		}
-		</style>
-		
-		<div class="motopress-wrapper content-holder clearfix">
-			<div class="container ">
-				<div class="row">
-					<div class="span12">
-						<div class="row  pa_top">
-							<div class="span4">
-								<script>
+								<div id="description" class="tab-pane in active">
+									<div class="product-tab">
+										<p class="text">THÔNG SỐ KỸ THUẬT<br>
+											Thương hiệu	ACER<br>
+											Series laptop	Spin 3<br>
+											CPU	Intel Core i3-7130U ( 2.7 GHz / 3MB / 2 nhân, 4 luồng )<br>
+											Chip đồ họa	Intel HD Graphics 620<br>
+											RAM	1 x 4GB Onboard DDR4 Không nâng cấp<br>
+											Màn hình	14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam<br>
+											Lưu trữ	1TB HDD 5400RPM<br>
+											Pin	3 cell 52 Wh , Pin liền<br>
+											Kích thước	33.5 x 23 x 2 cm</p>
+									</div>	
+								</div><!-- /.tab-pane -->
 
-									jQuery(document).ready(function ($) {
-										var options = {
-											$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-											$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-											$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-											$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-											$Loop: 0,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+								<div id="review" class="tab-pane">
+									<div class="product-tab">
+																				
+										<div class="product-reviews">
+											<h4 class="title">Customer Reviews</h4>
 
-											$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-											$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-											$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-											//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-											//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-											$SlideSpacing: 5, 					                //[Optional] Space between each slide in pixels, default value is 0
-											$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-											$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-											$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-											$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-											$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+											<div class="reviews">
+												<div class="review">
+													<div class="review-title"><span class="summary">Sản phẩm tuyệt vời</span><span class="date"><i class="fa fa-calendar"></i><span>1 days ago</span></span></div>
+													<div class="text">"Nhẹ và tiện lợi"</div>
+																										</div>
+											
+											</div><!-- /.reviews -->
+										</div><!-- /.product-reviews -->
+										
 
-											$ThumbnailNavigatorOptions: {
-												$Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
-												$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-
-												$Loop: 2,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
-												$AutoCenter: 3,                                 //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
-												$Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1
-												$SpacingX: 4,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
-												$SpacingY: 4,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
-												$DisplayPieces: 4,                              //[Optional] Number of pieces to display, default value is 1
-												$ParkingPosition: 0,                            //[Optional] The offset position to park thumbnail
-												$Orientation: 2,                                //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
-												$DisableDrag: false                             //[Optional] Disable drag or not, default value is false
-											}
-										};
-
-										var jssor_slider3 = new $JssorSlider$("slider3_container", options);
-
-										//responsive code begin
-										//you can remove responsive code if you don't want the slider scales while window resizes
-										function ScaleSlider() {
-											var parentWidth = jssor_slider3.$Elmt.parentNode.clientWidth;
-											if (parentWidth) {
-												var sliderWidth = parentWidth;
-
-												//keep the slider width no more than 810
-												sliderWidth = Math.min(sliderWidth, 810);
-
-												jssor_slider3.$ScaleWidth(sliderWidth);
-											}
-											else
-												window.setTimeout(ScaleSlider, 30);
-										}
-										ScaleSlider();
-
-										$(window).bind("load", ScaleSlider);
-										$(window).bind("resize", ScaleSlider);
-										$(window).bind("orientationchange", ScaleSlider);
-										//responsive code end
-									});
-								</script>
-								<!-- Jssor Slider Begin -->
-								<!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-								<div id="slider3_container" style="position: relative; top: 0px; left: 0px; width: 810px; height: 300px; background: #000; overflow: hidden; ">
-
-									<!-- Loading Screen -->
-									<div u="loading" style="position: absolute; top: 0px; left: 0px;">
-										<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-											background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
-										</div>
-										<div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
-											top: 0px; left: 0px;width: 100%;height:100%;">
-										</div>
-									</div>
-
-									<!-- Slides Container -->
-									<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
-										overflow: hidden;">
-										<div>
-											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-											<div u="thumb">
-												<img class="i" src="imgs/pavilionX360.webp" /><div class="t">Trước</div>
-												<div class="c">Mặt trước</div>
-											</div>
-										</div>
-										<div>
-											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-											<div u="thumb">
-												<img class="i" src="imgs/pavilionX360.webp" /><div class="t">Trái</div>
-												<div class="c">Mặt bên trái</div>
-											</div>
-										</div>
-										<div>
-											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-											<div u="thumb">
-												<img class="i" src="imgs/pavilionX360.webp" /><div class="t">Phải</div>
-												<div class="c">Mặt bên Phải</div>
-											</div>
-										</div>
-										<div>
-											<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-											<div u="thumb">
-												<img class="i" src="imgs/pavilionX360.webp" /><div class="t">Sau</div>
-												<div class="c">Mặt Phía sau</div>
-											</div>
-										</div>
-										<div>
-											<<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-											<div u="thumb">
-												<img class="i" src="imgs/pavilionX360.webp" /><div class="t">Thu Nhỏ</div>
-												<div class="c">Tổng quan mô hình thu nhỏ</div>
-											</div>
-										</div>
-									</div>
-									
-									<!--#region ThumbnailNavigator Skin Begin -->
-									<style>
-										/* jssor slider thumbnail navigator skin 11 css */
-										/*
-											.jssort11 .p            (normal)
-											.jssort11 .p:hover      (normal mouseover)
-											.jssort11 .pav          (active)
-											.jssort11 .pav:hover    (active mouseover)
-											.jssort11 .pdn          (mousedown)
-											*/
-										.jssort11 {
-											position: absolute;
-											width: 200px;
-											height: 300px;
-											font-family: Arial, Helvetica, sans-serif;
-											-moz-user-select: none;
-											-webkit-user-select: none;
-											-ms-user-select: none;
-											user-select: none;
-										}
-
-											.jssort11 .p {
-												position: absolute;
-												width: 200px;
-												height: 69px;
-												background: #181818;
-											}
-
-											.jssort11 .tp {
-												position: absolute;
-												top: 0;
-												left: 0;
-												width: 100%;
-												height: 100%;
-												border: none;
-											}
-
-											.jssort11 .i, .jssort11 .pav:hover .i {
-												position: absolute;
-												top: 3px;
-												left: 3px;
-												width: 60px;
-												height: 30px;
-												border: white 1px dashed;
-											}
-
-											* html .jssort11 .i {
-												width /**/: 62px;
-												height /**/: 32px;
-											}
-
-											.jssort11 .pav .i {
-												border: white 1px solid;
-											}
-
-											.jssort11 .t, .jssort11 .pav:hover .t {
-												position: absolute;
-												top: 3px;
-												left: 68px;
-												width: 129px;
-												height: 32px;
-												line-height: 32px;
-												text-align: center;
-												color: #fc9835;
-												font-size: 13px;
-												font-weight: 700;
-											}
-
-											.jssort11 .pav .t, .jssort11 .p:hover .t {
-												color: #fff;
-											}
-
-											.jssort11 .c, .jssort11 .pav:hover .c {
-												position: absolute;
-												top: 38px;
-												left: 3px;
-												width: 197px;
-												height: 31px;
-												line-height: 31px;
-												color: #fff;
-												font-size: 11px;
-												font-weight: 400;
-												overflow: hidden;
-											}
-
-											.jssort11 .pav .c, .jssort11 .p:hover .c {
-												color: #fc9835;
-											}
-
-											.jssort11 .t, .jssort11 .c {
-												transition: color 2s;
-												-moz-transition: color 2s;
-												-webkit-transition: color 2s;
-												-o-transition: color 2s;
-											}
-
-											.jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
-												transition: none;
-												-moz-transition: none;
-												-webkit-transition: none;
-												-o-transition: none;
-											}
-
-											.jssort11 .p:hover, .jssort11 .pav:hover {
-												background: #333;
-											}
-
-											.jssort11 .pav, .jssort11 .p.pdn {
-												background: #462300;
-											}
-									</style>
-									<div u="thumbnavigator" class="jssort11" style="left: 605px; top:0px;">
-										<!-- Thumbnail Item Skin Begin -->
-										<div u="slides" style="cursor: default;">
-											<div u="prototype" class="p" style="top: 0; left: 0;">
-												<div u="thumbnailtemplate" class="tp"></div>
-											</div>
-										</div>
-										<!-- Thumbnail Item Skin End -->
-									</div>
-									<!--#endregion ThumbnailNavigator Skin End -->
-									<a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
-								</div>
-							</div>
-							<div class="span4">
-								<h6>Laptop Acer Spin 3 SP314-51-36JE</h6>
-								<div class="row">								
-									Thương hiệu : <a href="#">Acer</a> </br>
-								</div>
-								<div class="row">
-									<div style="float:left ;width:120px">Số lượng còn lại:</div> <div id="soluongton" style="float:left ;width:20px">4</div>
-								</div>
-								<div class="row">									
-									<div style="float:left ;width:40px">giá:</div> <div id="soluongton" style="float:left ;width:20px">14.490.000đ</div>
-								</div>
-								<div class="row">									
-									<form>
-										<input type="button" value="Mua ngay" class="btn" style="margin-top:0px">&nbsp;<input type="button" value="Thêm vào giỏ hàng" class="btn" style="margin-top:0px">
-									</form>
-								</div>
-								<div class="row">
-									<p>- CPU: Intel Core i3-7130U ( 2.7 GHz / 3MB / 2 nhân, 4 luồng )</p>
-									<p>- Màn hình: 14" IPS ( 1920 x 1080 ) , cảm ứng</p>
-									<p>- RAM: 1 x 4GB Onboard DDR4, Ổ cứng: 1TB HDD 5400RPM</p>
-									<p>- Đồ họa: Intel HD Graphics 620</p>
-									<p>- Pin: 3 cell 52 Wh Pin liền , khối lượng: 1.7 kg</p>
-								</div>
-							</div>
-						</div>
-						<div class="row" id="conten">
-								<div class="span4" id="mota">
-									<h4>Mô tả sản phẩm</h4>
-									<h5>Đánh giá Laptop Acer Spin 3 SP314-51-36JE</h5>
-									<p>Tính di động là một trong những tiêu chí tối quan trọng khi chọn mua một sản phẩm công nghệ để phục vụ cho nhu cầu được cập nhật thông tin cũng như hoàn thành công việc mà không phải build hẳn một cỗ máy có chip vi xử lý bất kỳ thuộc thế hệ Coffe Lake mới nhất. Chính vì sự quan trọng việc càng mỏng-càng nhẹ-càng tốt mà những sản phẩm của Apple như iPhone, iPad, Macbook được săn đón nồng nhiệt trong cộng đồng hiện đại như hiện nay là dễ hiểu.</p>
-								</div>
-								<div class="span4" id="thongso">
-									<h4>Thông số kỹ thuật</h4>
-									<table>
-										<tr>
-											<td>Thương hiệu</td>
-											<td>ACER</td>
-										</tr>
-										<tr>
-											<td>Series laptop</td>
-											<td>Spin 3</td>
-										</tr>
-										<tr>
-											<td> CPU</td>
-											<td>Intel Core i3-7130U ( 2.7 GHz / 3MB / 2 nhân, 4 luồng )</td>
-										</tr><tr>
-											<td>Chip đồ họa</td>
-											<td>Intel HD Graphics 620</td>
-										</tr>
-										<tr>
-											<td>RAM</td>
-											<td>1 x 4GB Onboard DDR4 Không nâng cấp</td>
-										</tr><tr>
-											<td>Màn hình</td>
-											<td>14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam</td>
-										</tr><tr>
-											<td>Lưu trữ</td>
-											<td>1TB HDD 5400RPM</td>
-										</tr>
-										<tr>
-											<td>Pin</td>
-											<td>3 cell 52 Wh , Pin liền</td>
-										</tr>
-										<tr>
-											<td>Kích thước</td>
-											<td>33.5 x 23 x 2 cm</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						<div class="row">
-							<div class="span12">
-								<div id="post-203" class="post-203">
-									<div class="row2 ">
-										<div class="carousel-wrap owl-1">
-											<a href="#"><h3 class="margin_top_20"> Cùng thương hiệu</h3></a> 
-											<div >
-												<div class="span3 ">
-													<div class="desc">
+										
+										<div class="product-add-review">
+											<h4 class="title">Write your own review</h4>
+											<div class="review-table">
+												<div class="table-responsive">
+													<table class="table">	
+														<thead>
+															<tr>
+																<th class="cell-label">&nbsp;</th>
+																<th>1 star</th>
+																<th>2 stars</th>
+																<th>3 stars</th>
+																<th>4 stars</th>
+																<th>5 stars</th>
+															</tr>
+														</thead>	
+														<tbody>
+															<tr>
+																<td class="cell-label">Quality</td>
+																<td><input type="radio" name="quality" class="radio" value="1"></td>
+																<td><input type="radio" name="quality" class="radio" value="2"></td>
+																<td><input type="radio" name="quality" class="radio" value="3"></td>
+																<td><input type="radio" name="quality" class="radio" value="4"></td>
+																<td><input type="radio" name="quality" class="radio" value="5"></td>
+															</tr>
+															<tr>
+																<td class="cell-label">Price</td>
+																<td><input type="radio" name="quality" class="radio" value="1"></td>
+																<td><input type="radio" name="quality" class="radio" value="2"></td>
+																<td><input type="radio" name="quality" class="radio" value="3"></td>
+																<td><input type="radio" name="quality" class="radio" value="4"></td>
+																<td><input type="radio" name="quality" class="radio" value="5"></td>
+															</tr>
+															<tr>
+																<td class="cell-label">Value</td>
+																<td><input type="radio" name="quality" class="radio" value="1"></td>
+																<td><input type="radio" name="quality" class="radio" value="2"></td>
+																<td><input type="radio" name="quality" class="radio" value="3"></td>
+																<td><input type="radio" name="quality" class="radio" value="4"></td>
+																<td><input type="radio" name="quality" class="radio" value="5"></td>
+															</tr>
+														</tbody>
+													</table><!-- /.table .table-bordered -->
+												</div><!-- /.table-responsive -->
+											</div><!-- /.review-table -->
+											
+											<div class="review-form">
+												<div class="form-container">
+													<form role="form" class="cnt-form">
 														
-														<a href="#">
-															<h5>
-																<span>Laptop HP Pavilion</br> X360 14-ba065TU</span>
-																<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-																<span>14.490.000đ</span>
-															</h5>
-														</a>
-													</div>
-												</div>
-												<div class="span3 ">
-													<div class="desc">
-														<a href="#">
-															<h5>
-																<span>Laptop HP Pavilion</br> X360 14-ba065TU</span>
-																<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-																<span>14.490.000đ</span>
-															</h5>
-														</a>
-													</div>
-												</div>
-												<div class="span3 ">
-													<div class="desc">
-														<a href="#">
-															<h5>
-																<span>Laptop HP Pavilion</br> X360 14-ba065TU</span>
-																<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-																<span>14.490.000đ</span>
-															</h5>
-														</a>
-													</div>
-												</div>
-												<div class="span3 ">
-													<div class="desc">
-														<a href="#">
-															<h5>
-																<span>Laptop HP Pavilion</br> X360 14-ba065TU</span>
-																<img u="image" src="imgs/pavilionX360.webp" width="100%"/>
-																<span>14.490.000đ</span>
-															</h5>
-														</a>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-									</div> 
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label for="exampleInputName">Your Name <span class="astk">*</span></label>
+																	<input type="text" class="form-control txt" id="exampleInputName" placeholder="">
+																</div><!-- /.form-group -->
+																<div class="form-group">
+																	<label for="exampleInputSummary">Summary <span class="astk">*</span></label>
+																	<input type="text" class="form-control txt" id="exampleInputSummary" placeholder="">
+																</div><!-- /.form-group -->
+															</div>
+
+															<div class="col-md-6">
+																<div class="form-group">
+																	<label for="exampleInputReview">Review <span class="astk">*</span></label>
+																	<textarea class="form-control txt txt-review" id="exampleInputReview" rows="4" placeholder=""></textarea>
+																</div><!-- /.form-group -->
+															</div>
+														</div><!-- /.row -->
+														
+														<div class="action text-right">
+															<button class="btn btn-primary btn-upper">SUBMIT REVIEW</button>
+														</div><!-- /.action -->
+
+													</form><!-- /.cnt-form -->
+												</div><!-- /.form-container -->
+											</div><!-- /.review-form -->
+
+										</div><!-- /.product-add-review -->										
+										
+							        </div><!-- /.product-tab -->
+								</div><!-- /.tab-pane -->
+
+								<div id="tags" class="tab-pane">
+									<div class="product-tag">
+										
+										<h4 class="title">Product Tags</h4>
+										<form role="form" class="form-inline form-cnt">
+											<div class="form-container">
 									
-										
-									<div class="row2 ">
-										
-									</div> 
-								</div> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<footer class="motopress-wrapper footer">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<div class="row footer-widgets">
-							<div class="span4">
-								<div class="row">
-									<div id="social_networks-2">
-									<style>
-					.captionOrange, .captionBlack
-				{
-					color: #fff;
-					font-size: 20px;
-					line-height: 30px;
-					text-align: center;
-					border-radius: 4px;
-				}
-				.captionOrange
-				{
-					background: #EB5100;
-					background-color: rgba(235, 81, 0, 0.6);
-				}
-				.captionBlack
-				{
-					font-size:16px;
-					background: #000;
-					background-color: rgba(0, 0, 0, 0.4);
-				}
-				a.captionOrange, A.captionOrange:active, A.captionOrange:visited
-				{
-					color: #ffffff;
-					text-decoration: none;
-				}
-				a.captionOrange:hover
-				{
-					color: #eb5100;
-					text-decoration: underline;
-					background-color: #eeeeee;
-					background-color: rgba(238, 238, 238, 0.7);
-				}
-				.bricon
-				{
-					background: url(img/browser-icons.png);
-				}
-					
-						.share-icon {
-							display: inline-block;
-							float: left;
-							margin: 4px;
-							width: 32px;
-							height: 32px;
-							cursor: pointer;
-							vertical-align: middle;
-							background-image: url(img/share/share-icons.png);
-						}
-
-						.share-facebook {
-							background-position: 0px 0px;
-						}
-
-							.share-facebook:hover {
-								background-position: 0px -40px;
-							}
-
-				.share-twitter {
-					background-position: -40px 0px;
-				}
-
-					.share-twitter:hover {
-						background-position: -40px -40px;
-					}
-
-				.share-pinterest {
-					background-position: -80px 0px;
-				}
-
-					.share-pinterest:hover {
-						background-position: -80px -40px;
-					}
-
-						.share-linkedin {
-							background-position: -240px 0px;
-						}
-
-							.share-linkedin:hover {
-								background-position: -240px -40px;
-							}
-
-
-						.share-googleplus {
-							background-position: -120px 0px;
-						}
-
-							.share-googleplus:hover {
-								background-position: -120px -40px;
-							}
-
-
-				.share-stumbleupon {
-					background-position: -360px 0px;
-				}
-
-					.share-stumbleupon:hover {
-						background-position: -360px -40px;
-					}
-
-						.share-email {
-							background-position: -320px 0px;
-						}
-
-							.share-email:hover {
-								background-position: -320px -40px;
-							}
-					</style>
-										<h4>Follow Us</h4>							 
-										<ul class="social">
-											<li class="social_li">
-												<a class="share-icon share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://jssor.com" title="Share on Facebook"></a>
-											</li>
-											<li class="social_li">
-												<a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=http://jssor.com&text=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on Twitter"></a>
-						
-											</li>
-											<li class="social_li">
-												<a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>
-						
-											</li>
-											<li class="social_li">
-												<a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>
-						
-											</li>
-											<li class="social_li">
-												<a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20JavaScript%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
-					
-											</li>
-										</ul>							 
-									</div> 
-								</div>
-								<div class="row">
-									<div id="footer-text" class="footer-text">
-										 &copy; 2021<br/>
-										Privacy Policy			 
-									</div> 
-								</div>
-							</div>
-							<div class="span4">
-								<div id="text-6">
-									<h4>Địa Chỉ</h4> 
-									<div class="textwidget">
-										<address class="address-2">
-											<span>Đại Học Bà Rịa Vũng Tàu</span>
-											<span>Điện Thoại: Chưa Có</span>
-											<span>
-												<a href="#">
-													<span class="email">[email&#160;protected]</span>
+												<div class="form-group">
+													<label for="exampleInputTag">Add Your Tags: </label>
+													<input type="email" id="exampleInputTag" class="form-control txt">
 													
-												</a>
-											</span>
-										</address>
-									</div>
-								</div> 
-							</div> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		 
-	</div>
-	<div id="back-top-wrapper" class="visible-desktop">
-		<p id="back-top">
-			<a href="#top"><span></span></a> 
-		</p>
-	</div>
-	<script type='text/javascript' src='js/superfish.jsver1.5.3.js'></script>
-	<script type='text/javascript' src='js/jquery.mobilemenu.jsver1.0.js'></script>
-	<script type='text/javascript' src='js/jquery.magnific-popup.min.jsver0.9.3.js'></script>
+
+												</div>
+
+												<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
+											</div><!-- /.form-container -->
+										</form><!-- /.form-cnt -->
+
+										<form role="form" class="form-inline form-cnt">
+											<div class="form-group">
+												<label>&nbsp;</label>
+												<span class="text col-md-offset-3">Use spaces to separate tags. Use single quotes (') for phrases.</span>
+											</div>
+										</form><!-- /.form-cnt -->
+
+									</div><!-- /.product-tab -->
+								</div><!-- /.tab-pane -->
+
+							</div><!-- /.tab-content -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.product-tabs -->
+
+				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
+<section class="section featured-product wow fadeInUp">
+	<h3 class="section-title">upsell products</h3>
+	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
+	    	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="https://static.acer.com/up/Resource/Acer/Laptops/Swift_3/Image/20200416/Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			            <div class="tag sale"><span>sale</span></div>            		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">Swift 3 AMD</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="https://static.acer.com/up/Resource/Acer/Laptops/Swift_3X/Images/20201008/Acer-Swift-3X_SF314-510G_Gold_modelpreview.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			            <div class="tag sale"><span>sale</span></div>            		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">Swift 3x</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="https://static.acer.com/up/Resource/Acer/Laptops/Swift_5/Image/20210310/Acer-Swift-5_SF514-55_FP_Green_modelpreview_evo.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			                        <div class="tag hot"><span>hot</span></div>		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">Swift 5</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="https://static.acer.com/up/Resource/Acer/Laptops/Swift_7/Image/20190226/swift_7_SF714-52T-Black-Budlight_AL_preview.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			<div class="tag new"><span>new</span></div>                        		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">Swift 7</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="assets\images\blank.gif" data-echo="https://static.acer.com/up/Resource/Acer/Laptops/Porsche_Design_Acer_Book_RS/Images/20201012/Porsche-Design-Acer-Book-RS_AP714-51_modelpreview.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			                        <div class="tag hot"><span>hot</span></div>		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">Porsche Design Acer Book RS</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+	
+		<div class="item item-carousel">
+			<div class="products">
+				
+	<div class="product">		
+		<div class="product-image">
+			<div class="image">
+				<a href="detail.html"><img src="assets\images\blank.gif" data-echo="https://static.acer.com/up/Resource/Acer/Laptops/Nitro_7/Images/20200703/Acer-Nitro-7_AN715-52_RGB-KB_modelpreview.png" alt=""></a>
+			</div><!-- /.image -->			
+
+			<div class="tag new"><span>new</span></div>                        		   
+		</div><!-- /.product-image -->
+			
+		
+		<div class="product-info text-left">
+			<h3 class="name"><a href="detail.html">NITRO 7</a></h3>
+			<div class="rating rateit-small"></div>
+			<div class="description"></div>
+
+			<div class="product-price">	
+				<span class="price">
+					$650.99				</span>
+										     <span class="price-before-discount">$ 800</span>
+									
+			</div><!-- /.product-price -->
+			
+		</div><!-- /.product-info -->
+					<div class="cart clearfix animate-effect">
+				<div class="action">
+					<ul class="list-unstyled">
+						<li class="add-cart-button btn-group">
+							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+								<i class="fa fa-shopping-cart"></i>													
+							</button>
+							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+													
+						</li>
+	                   
+		                <li class="lnk wishlist">
+							<a class="add-to-cart" href="detail.html" title="Wishlist">
+								 <i class="icon fa fa-heart"></i>
+							</a>
+						</li>
+
+						<li class="lnk">
+							<a class="add-to-cart" href="detail.html" title="Compare">
+							    <i class="fa fa-signal"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.action -->
+			</div><!-- /.cart -->
+			</div><!-- /.product -->
+      
+			</div><!-- /.products -->
+		</div><!-- /.item -->
+			</div><!-- /.home-owl-carousel -->
+</section><!-- /.section -->
+<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
+			
+			</div><!-- /.col -->
+			<div class="clearfix"></div>
+		</div><!-- /.row -->
+		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
+
+<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
+</div><!-- /.body-content -->
+
+<!-- ============================================================= FOOTER ============================================================= -->
+<footer id="footer" class="footer color-bg">
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Contact Us</h4>
+                    </div><!-- /.module-heading -->
+
+                    <div class="module-body">
+        <ul class="toggle-footer" style="">
+            <li class="media">
+                <div class="pull-left">
+                     <span class="icon fa-stack fa-lg">
+                            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <p>ThemesGround, 789 Main rd, Anytown, CA 12345 USA</p>
+                </div>
+            </li>
+
+              <li class="media">
+                <div class="pull-left">
+                     <span class="icon fa-stack fa-lg">
+                      <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <p>+(888) 123-4567<br>+(888) 456-7890</p>
+                </div>
+            </li>
+
+              <li class="media">
+                <div class="pull-left">
+                     <span class="icon fa-stack fa-lg">
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <span><a href="#">flipmart@themesground.com</a></span>
+                </div>
+            </li>
+              
+            </ul>
+    </div><!-- /.module-body -->
+                </div><!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Customer Service</h4>
+                    </div><!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                            <li class="first"><a href="#" title="Contact us">My Account</a></li>
+                <li><a href="#" title="About us">Order History</a></li>
+                <li><a href="#" title="faq">FAQ</a></li>
+                <li><a href="#" title="Popular Searches">Specials</a></li>
+                <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
+                        </ul>
+                    </div><!-- /.module-body -->
+                </div><!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Corporation</h4>
+                    </div><!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                          <li class="first"><a title="Your Account" href="#">About us</a></li>
+                <li><a title="Information" href="#">Customer Service</a></li>
+                <li><a title="Addresses" href="#">Company</a></li>
+                <li><a title="Addresses" href="#">Investor Relations</a></li>
+                <li class="last"><a title="Orders History" href="#">Advanced Search</a></li>
+                        </ul>
+                    </div><!-- /.module-body -->
+                </div><!-- /.col -->
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="module-heading">
+                        <h4 class="module-title">Why Choose Us</h4>
+                    </div><!-- /.module-heading -->
+
+                    <div class="module-body">
+                        <ul class='list-unstyled'>
+                            <li class="first"><a href="#" title="About us">Shopping Guide</a></li>
+                <li><a href="#" title="Blog">Blog</a></li>
+                <li><a href="#" title="Company">Company</a></li>
+                <li><a href="#" title="Investor Relations">Investor Relations</a></li>
+                <li class=" last"><a href="contact-us.html" title="Suppliers">Contact Us</a></li>
+                        </ul>
+                    </div><!-- /.module-body -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 no-padding social">
+                <ul class="link">
+                  <li class="fb pull-left"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
+                  <li class="tw pull-left"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
+                  <li class="googleplus pull-left"><a target="_blank" rel="nofollow" href="#" title="GooglePlus"></a></li>
+                  <li class="rss pull-left"><a target="_blank" rel="nofollow" href="#" title="RSS"></a></li>
+                  <li class="pintrest pull-left"><a target="_blank" rel="nofollow" href="#" title="PInterest"></a></li>
+                  <li class="linkedin pull-left"><a target="_blank" rel="nofollow" href="#" title="Linkedin"></a></li>
+                  <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 no-padding">
+                <div class="clearfix payment-methods">
+                    <ul>
+                        <li><img src="assets\images\payments\1.png" alt=""></li>
+                        <li><img src="assets\images\payments\2.png" alt=""></li>
+                        <li><img src="assets\images\payments\3.png" alt=""></li>
+                        <li><img src="assets\images\payments\4.png" alt=""></li>
+                        <li><img src="assets\images\payments\5.png" alt=""></li>
+                    </ul>
+                </div><!-- /.payment-methods -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ============================================================= FOOTER : END============================================================= -->
+
+
+	<!-- For demo purposes – can be removed on production -->
+	
+	
+	<!-- For demo purposes – can be removed on production : End -->
+
+	<!-- JavaScripts placed at the end of the document so the pages load faster -->
+	<script src="assets\js\jquery-1.11.1.min.js"></script>
+	
+	<script src="assets\js\bootstrap.min.js"></script>
+	
+	<script src="assets\js\bootstrap-hover-dropdown.min.js"></script>
+	<script src="assets\js\owl.carousel.min.js"></script>
+	
+	<script src="assets\js\echo.min.js"></script>
+	<script src="assets\js\jquery.easing-1.3.min.js"></script>
+	<script src="assets\js\bootstrap-slider.min.js"></script>
+    <script src="assets\js\jquery.rateit.min.js"></script>
+    <script type="text/javascript" src="assets\js\lightbox.min.js"></script>
+    <script src="assets\js\bootstrap-select.min.js"></script>
+    <script src="assets\js\wow.min.js"></script>
+	<script src="assets\js\scripts.js"></script>
+
+	
+
+	
+
 </body>
 </html>
