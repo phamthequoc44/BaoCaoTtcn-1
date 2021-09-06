@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
+	    <meta name="robots" content="all">
+
+	    <title>Shop Laptop</title>
+
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+	    
+	    <!-- Customizable CSS -->
+	    <link rel="stylesheet" href="assets\css\main.css">
+	    <link rel="stylesheet" href="assets\css\blue.css">
+	    <link rel="stylesheet" href="assets\css\owl.carousel.css">
+		<link rel="stylesheet" href="assets\css\owl.transitions.css">
+		<link rel="stylesheet" href="assets\css\animate.min.css">
+		<link rel="stylesheet" href="assets\css\rateit.css">
+		<link rel="stylesheet" href="assets\css\bootstrap-select.min.css">
+
+		
+
+		
+		<!-- Icons/Glyphs -->
+		<link rel="stylesheet" href="assets\css\font-awesome.css">
+
+        <!-- Fonts --> 
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+		<style>		
+			 
+			table { width: 100%; }
+			table, th, td { border: solid 1px #DDD;
+				border-collapse: collapse; padding: 2px 3px; text-align: center;
+			}
+		</style>
+	</head>
+    <body onload="createTable()"> 
+		
+		
+
+		<div class="wrap-admin">
+			<div class="menu-trai-admin">
+				<h3>Danh Mục</h3>
+		
+					<div class="panel panel-default panel-info">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><b>Loại Phòng</b></a>
+							</h4>
+						</div>
+					<div>
+						<div class="list-group">
+							<a href="danhsachsp.html" class="list-group-item">Danh Sách Sản Phẩm</a>
+							<dialog id="favDialog">
+								<form method="dialog">
+									<p>
+										<label>Mã loại:
+										<select style="padding-right: 40%;" >										  
+										  <option>HP</option>
+										  <option>Acer</option>
+										  <option>MSI</option>
+										</select>
+									  </label>
+									</p>
+									  <p>
+										  <label>Tên Loại:</label><BR>
+										  <input name="name"  /> 
+									</p>
+
+									<p>
+										<label for="thongso">Thông Số:</label><br>
+										<textarea id="thongso" name="thongso" rows="4" cols="50" >											   
+										</textarea>
+								  	</p>
+									<p>
+										<label>Đường dẫn ảnh:</label><textarea id="thongso" name="thongso" rows="1" cols="20"></textarea>										
+									</p>
+								  <menu>
+									<button value="cancel">Cancel</button>
+									<input type = "button" value = "Confirm " onclick = "Warn();" />
+								  </menu>
+								</form>
+							  </dialog>
+							  
+							  <!-- <menu>
+								<button id="updateDetails">Thêm Mới Sản Phẩm</button>
+							  </menu> -->
+							  
+							  <output aria-live="polite"></output>
+						</div>
+					</div>
+			</div>
+			
+				   <div class="body-admin">          
+						<h2 style="text-align:center">Danh Sách Loại Phòng</h2>
+							<table class="table table-hover table-striped">
+								<colgroup>
+									<col style="width: 6%">
+									<col style="width: 10%">
+									<col style="width: 10%">
+									<col style="width: 44%">
+									<col style="width: 22%">
+									<col style="width: 8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>STT</th>
+										<th>Mã Loại</th>
+										<th>Tên Loại</th>
+										<th>Thông Số</th>
+										<th>Đường Dẫn Ảnh</th>
+										<th>Thao Tác</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Acer</td>
+										<td>Swift 3 AMD</td>
+										<td>CPU Intel Core i5-1035G1 thế hệ thứ 10<br>
+											Chip đồ họa Intel Iris Plus<br>
+											RAM/ HDD 8Gb<br>
+											Màn hình 14" ( 1920 x 1080 )<br>
+											SSD 512 GB<br>
+											Thời lượng pin kéo dài 7h31’<br>
+											</td>
+										<td>\assets\images\hot-deals\Acer-Swift-3_SF314-42_Silver-FP-Backlit_modelpreview.png</td>
+										<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Acer</td>
+										<td>Swift 5</td>
+										<td>CPU Intel Core i5 8265U <br>
+											Chip đồ họa Onboard, Intel HD Graphics 620<br>
+											RAM 8Gb<br>
+											Màn hình 14", 1920 x 1080 Pixel, LED-backlit ( 1920 x 1080 )<br>
+											SSD 256 GB<br>
+											PIN Lithium-ion 2 cell, Không tháo rời<br>
+										</td>
+										<td>\assets\images\hot-deals\Acer-Swift-5_SF514-55_FP_Green_modelpreview_evo.png</td>
+										<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Acer</td>
+										<td>Swift 7</td>
+										<td>CPU Intel Core i7 7Y75 <br>
+											Chip đồ họa Onboard, Intel HD Graphics 620<br>
+											RAM 8Gb<br>
+											Màn hình 13", Full HD ( 1920 x 1080 )<br>
+											SSD 256 GB<br>
+											PIN 4 cell, Không tháo rời<br>
+										</td>
+										<td>\assets\images\hot-deals\swift_7_SF714-52T-Black-Budlight_AL_preview.png</td>
+										<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Acer</td>
+										<td>Porsche Design Acer Book RS</td>
+										<td>CPU Intel Core i7 thế hệ thứ 11 <br>
+											Chip đồ họa NVIDIA GeForce MX350<br>
+											RAM 16Gb<br>
+											Màn hình 14", Full-HD viền mỏng có kính Corning Gorilla Glass chống khuẩn.<br>
+											SSD 1TB<br>
+											Thời lượng pin kéo dài 17 tiếng<br>
+										</td>
+										<td>\assets\images\hot-deals\Porsche-Design-Acer-Book-RS_AP714-51_modelpreview.png</td>
+										<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>HP</td>
+										<td>Laptop HP Pavilion x360</td>
+										<td>CPU Intel Core i3-7130U (2.7 GHz / 3MB / 2 nhân, 4 luồng ) <br>
+											Chip đồ họa Intel HD Graphics 620<br>
+											RAM 1 x 4GB Onboard DDR4 Không nâng cấp<br>
+											Màn hình 14" ( 1920 x 1080 ) Full HD IPS cảm ứng , HD webcam<br>
+											HDD 1TB 5400RPM<br>
+											Pin 3 cell 52 Wh , Pin liền<br></td>
+										<td>\assets\images\hot-deals\71PszL71OhL._AC_SL1500_.jpg</td>
+										<td><a href="#">Sửa</a>&nbsp;|&nbsp;<a href="#">Xóa</a></td>
+									</tr>
+									
+									
+								</tbody>
+								
+							</table>		
+							
+							
+						</body>
+						
+						<table id="cont" >
+							
+						</table>   <!--the container to add the table.-->
+						<p style="padding-left: 30%;;">
+							
+							<input type="button" id="bt" value="Submit Data" onclick="submit()" />
+							
+							<input type="button" id="addRow" value="Thêm Sản Phẩm" onclick="addRow()" />
+						</p>
+						
+					</tD>
+						<script>
+						
+
+							var arrHead = new Array();
+							arrHead = ['','Mã Loại', 'Tên Loại ', 'Thông Số	 ', '  Đường Dẫn Ảnh']; // table headers.
+						
+							// first create a TABLE structure by adding few headers.
+							function createTable() {
+								var empTable = document.createElement('table');
+								empTable.setAttribute('id', 'empTable');  // table id.
+						
+								var tr = empTable.insertRow(-1);
+						
+								for (var h = 0; h < arrHead.length; h++) {
+									var th = document.createElement('th'); // the header object.
+									th.innerHTML = arrHead[h];
+									tr.appendChild(th);
+								}
+						
+								var div = document.getElementById('cont');
+								div.appendChild(empTable);    // add table to a container.
+							}
+						
+							// function to add new row.
+							function addRow() {
+								var empTab = document.getElementById('empTable');
+						
+								var rowCnt = empTab.rows.length;    // get the number of rows.
+								var tr = empTab.insertRow(rowCnt); // table row.
+								tr = empTab.insertRow(rowCnt);
+						
+								for (var c = 0; c < arrHead.length; c++) {
+									var td = document.createElement('td');          // TABLE DEFINITION.
+									td = tr.insertCell(c);
+									
+									if (c == 0) {   // if its the first column of the table.
+										// add a button control.
+										var button = document.createElement('input');
+						
+										// set the attributes.
+										button.setAttribute('type', 'button');
+										button.setAttribute('value', 'Remove');
+						
+										// add button's "onclick" event.
+										button.setAttribute('onclick', 'removeRow(this)');
+						
+										td.appendChild(button);
+									}
+									else {
+										// the 2nd, 3rd and 4th column, will have textbox.
+										var ele = document.createElement('textarea',);
+										
+										ele.setAttribute('type', 'text');
+										ele.setAttribute('value', '');								
+										td.appendChild(ele);
+									}
+								}
+							}
+							
+							// function to delete a row.
+							function removeRow(oButton) {
+								var empTab = document.getElementById('empTable');
+								empTab.deleteRow(oButton.parentNode.parentNode.rowIndex); // buttton -> td -> tr
+								
+							}
+						
+							// function to extract and submit table data.
+							function submit() {
+								var myTab = document.getElementById('empTable');
+								var arrValues = new Array();
+						
+								// loop through each row of the table.
+								for (row = 1; row < myTab.rows.length - 1; row++) {
+									// loop through each cell in a row.
+									for (c = 0; c < myTab.rows[row].cells.length; c++) {
+										var element = myTab.rows.item(row).cells[c];
+										if (element.childNodes[0].getAttribute('type') == 'text') {
+											arrValues.push("'" + element.childNodes[0].value + "'");
+										}
+									}
+								}
+								
+								// finally, show the result in the console.								
+								alert("Thêm Thành Công")
+								location.reload()		
+							}
+							
+						</script>
+						
+
+		</div>
+	</body>
+	<script>
+		var updateButton = document.getElementById('updateDetails');
+		var favDialog = document.getElementById('favDialog');
+		var outputBox = document.querySelector('output');
+		var selectEl = document.querySelector('select');
+		var confirmBtn = document.getElementById('confirmBtn');
+
+		// "Update details" button opens the <dialog> modally
+		updateButton.addEventListener('click', function onOpen() {
+		if (typeof favDialog.showModal === "function") {
+			favDialog.showModal();
+		} else {
+			alert("The <dialog> API is not supported by this browser");
+		}
+		});
+		// "Favorite animal" input sets the value of the submit button
+		selectEl.addEventListener('change', function onSelect(e) {
+		confirmBtn.value = selectEl.value;
+		});
+		favDialog.addEventListener('confirm', function onClose() {
+			alert("Thêm Thành Công");
+		});
+		
+	</script>
+	<script type = "text/javascript">
+		
+		   function Warn() {
+			  alert ("Lưu Thành Công");
+			  
+		   }
+		
+	 </script>
+</html>
